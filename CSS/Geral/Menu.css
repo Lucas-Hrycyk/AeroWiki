@@ -1,0 +1,25 @@
+#menu{
+    overflow-y: auto;
+    max-height: 100vh;
+    scrollbar-width: none;
+}
+
+#menu .nav-link{
+    color: white;
+}
+
+#menu .nav-link:hover {
+    color: gray;
+}
+
+#toggleNavButton{
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#toggleNavButtonPhone{
+    display: none;
+}
