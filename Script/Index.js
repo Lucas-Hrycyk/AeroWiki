@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
       menu.classList.toggle('hidden');
     });
   
-    fetch('menu.html')
+    fetch('Html/Geral/menu.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('menu').innerHTML = data;

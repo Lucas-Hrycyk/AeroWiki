@@ -23,3 +23,28 @@
 #toggleNavButtonPhone{
     display: none;
 }
+
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    #ImagemCarrossel{
+        height: 92vh; 
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px){
+    #menu{
+        width: 100%;
+        font-size: larger;
+    }
+
+    #ImagemCarrossel{
+        height: 95vh; 
+        width: 100%;
+    }
+
+    #toggleNavButtonPhone{
+        display: flex;
+        color: white;
+        border-color: rgba(240, 248, 255, 0);
+    }    
+}
