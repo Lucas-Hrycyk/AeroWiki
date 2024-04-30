@@ -18,8 +18,8 @@
             <div class="col px-0">
                 <header class="bg-dark">
                     <button type="button" id="toggleNavButton" class="btn btn-outline-primary"><i class="bi bi-list text-white"></i></button>
-                    <span class="text-white" style="vertical-align: middle;">BEM VINDO</span>
-                    <a href="Html/Geral/Contato.html" class="nav-link active text-white">Contato</a>
+                    <span id="tituloHeader" class="text-white" style="vertical-align: middle;">BEM VINDO</span>
+                    <a href="#Contato" onclick="mostrarContato()" class="nav-link active text-white">Contato</a>
                 </header>
                 <section>
                     <div id="Carrossel">
@@ -68,10 +68,23 @@
                             </button>
                           </div>
                     </div>
+                    <div id="Contato">
+                      <p id="ContatoTexto" style="display: none;" class="text-white">Contato</p>
+                      <p>Teste de Rolagem</p>
+                    </div>
                 </section>
             </div>
         </div>
     </div>
+
+    <script>
+    function mostrarContato() {
+        // Altera dinamicamente o texto do span
+        document.getElementById('tituloHeader').textContent = 'Contato';
+        // Exibe o texto "Contato"
+        document.getElementById('contatoTexto').style.display = 'block';
+    }
+  </script>
 <script src="Script/Index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
