@@ -8,7 +8,6 @@
 
 section{
     width: 100%; 
-    margin: 0;
     position: relative;
 }
 
@@ -27,6 +26,11 @@ header a{
 
 a{
     text-decoration: none;
+}
+
+#Info, #Contato{
+    height: 100vh;
+    padding-top: 3%;
 }
 
 /* ---------------Carrossel------------------- */

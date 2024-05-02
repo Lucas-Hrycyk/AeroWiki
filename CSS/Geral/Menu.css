@@ -1,7 +1,13 @@
-#menu{
+#Principal{
+    position: fixed;
+}
+
+#Lista{
+    width: 100%;
+    scrollbar-width: none;
     overflow-y: auto;
     max-height: 100vh;
-    scrollbar-width: none;
+    padding-bottom: 5%;
 }
 
 #menu .nav-link{
@@ -24,22 +30,12 @@
     display: none;
 }
 
-@media only screen and (min-width: 1300px) and (max-width: 1600px) {
-    #ImagemCarrossel{
-        height: 92vh; 
-        width: 100%;
-    }
-}
-
 @media only screen and (min-width: 200px) and (max-width: 500px){
+    
+    
     #menu{
         width: 100%;
         font-size: larger;
-    }
-
-    #ImagemCarrossel{
-        height: 95vh; 
-        width: 100%;
     }
 
     #toggleNavButtonPhone{
