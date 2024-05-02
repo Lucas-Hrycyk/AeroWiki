@@ -17,4 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
           menu.classList.toggle('hidden');
         });
       });
-  });
+
+      fetch('Html/Geral/Footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+
+        });
+});

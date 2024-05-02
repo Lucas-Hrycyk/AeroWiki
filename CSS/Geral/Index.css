@@ -2,14 +2,10 @@
     margin: 0;
     list-style: none;
     padding: 0;
+    overflow-x: hidden;
 }
 
-/* ---------------Geral-------------------- */
-
-section{
-    width: 100%; 
-    position: relative;
-}
+/* ---------------Corpo-------------------- */
 
 header{
     position: fixed;
@@ -21,15 +17,24 @@ header a{
     float: right;
     margin-right: 1%;
     margin-top: 0.5%;
-    align-items: center;
 }
 
-a{
-    text-decoration: none;
+header span{
+    vertical-align: middle
 }
 
-#Info, #Contato{
+section{
+    width: 100%; 
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+#Info{
     height: 100vh;
+    padding-top: 3%;
+}
+
+#Contato{
     padding-top: 3%;
 }
 
@@ -38,27 +43,30 @@ a{
 #ImagemCarrossel{
     height: 100vh; 
     width: 100%;
+}
+
+h5{
+    overflow: hidden;
+}
+
+#LinkImagem{
     text-decoration: none;
 }
 
 
-
 @media only screen and (min-width: 1300px) and (max-width: 1600px) {
-    #ImagemCarrossel{
-        height: 92vh; 
-        width: 100%;
+    #Info, #Contato{
+        height: 100vh;
+        padding-top: 4.5%;
     }
+
 }
 
+/* Rever essa parte */
 @media only screen and (min-width: 200px) and (max-width: 500px){
     #menu{
         width: 100%;
         font-size: larger;
-    }
-
-    #ImagemCarrossel{
-        height: 95vh; 
-        width: 100%;
     }
 
     #toggleNavButtonPhone{

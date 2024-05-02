@@ -32,10 +32,16 @@
 
 @media only screen and (min-width: 200px) and (max-width: 500px){
     
-    
-    #menu{
+    #Principal{
         width: 100%;
-        font-size: larger;
+    }
+
+    #Lista{
+        width: 100%;
+        scrollbar-width: none;
+        overflow-y: auto;
+        max-height: 100vh;
+        padding-bottom: 5%;
     }
 
     #toggleNavButtonPhone{
