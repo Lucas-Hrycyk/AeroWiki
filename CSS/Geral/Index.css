@@ -3,6 +3,9 @@
     list-style: none;
     padding: 0;
     overflow-x: hidden;
+    color: black;
+    vertical-align: middle;
+    scrollbar-width: none;
 }
 
 /* ---------------Corpo-------------------- */
@@ -19,10 +22,6 @@ header a{
     margin-top: 0.5%;
 }
 
-header span{
-    vertical-align: middle
-}
-
 section{
     width: 100%; 
     position: relative;
@@ -34,27 +33,49 @@ section{
     padding-top: 3%;
 }
 
+/* ---------------------------Contato----------------------  */
+
+
 #Contato{
     padding-top: 4%;
     height: 100vh;
     width: 100%;
 }
 
+/*----------------------- Formulario----------------------- */
+
 #Form{
     border: 1px solid black;
-    width: 35%;
-    margin: 0 auto;
-    margin-top: 15%;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
 }
 
-.GrupoInput{
-    display: block;
-    margin: 10px;
+#Form span{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid;
 }
+  
+.GrupoInput{
+   margin-left: 5%;
+   margin-bottom: 10px; 
+}
+
+input, textarea{
+    width: 95%;
+    color: black;
+    padding: 2px;
+}  
 
 #Form label{
     color: black;
-    vertical-align: middle;
+}
+
+#Form button{
+    display: flex;
+    margin: 1% auto;
 }
 
 /* ---------------Carrossel------------------- */
