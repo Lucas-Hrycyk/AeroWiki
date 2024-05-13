@@ -43,10 +43,9 @@ section{
 }
 
 #Comentarios{
-    background-color: rgb(255, 255, 255, 0);
     position: absolute;
-    width: 90%;
-    height: 90vh;
+    width: 95%;
+    height: 40vh;
 }
 
 /*----------------------- Formulario----------------------- */
