@@ -1,9 +1,5 @@
 *{
-    margin: 0;
-    list-style: none;
-    padding: 0;
     overflow-x: hidden;
-    color: black;
     vertical-align: middle;
     scrollbar-width: none;
 }
@@ -25,8 +21,9 @@ header a{
 section{
     width: 100%; 
     position: relative;
-    scroll-behavior: smooth;
 }
+
+/* ----------------------------Sobre---------------------- */
 
 #Info{
     height: 100vh;
@@ -45,17 +42,24 @@ section{
 #Comentarios{
     position: absolute;
     width: 95%;
-    height: 40vh;
+    height: 100vh;
+}
+
+#cardComentarios{
+    overflow-y: auto;
+    max-height: 70vh;
 }
 
 /*----------------------- Formulario----------------------- */
 
+.desfocarFundo{
+    filter: blur(5px);  
+}
+
 #Form{
     background-color: white;
     display: none;
-    border: 1px solid black;
     position: relative;
-    border-radius: 5px;
     width: 50%;
     margin-left: 25%;
     margin-top: 2%;
@@ -68,14 +72,9 @@ section{
     width: 100%;
 }
 
-h5{
-    overflow: hidden;
-}
-
 #LinkImagem{
     text-decoration: none;
 }
-
 
 @media only screen and (min-width: 1300px) and (max-width: 1600px) {
     #Info, #Contato{
