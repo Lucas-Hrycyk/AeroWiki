@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menu.classList.toggle('hidden');
   });
 
-  fetch('../AeroWiki/Html/Geral/MenuPrincipal.html')
+  fetch('/AeroWiki/Html/Geral/MenuPrincipal.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('menu').innerHTML = data;
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
-    fetch('../AeroWiki/Html/Geral/Footer.html')
+    fetch('/AeroWiki/Html/Geral/Footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer').innerHTML = data;
