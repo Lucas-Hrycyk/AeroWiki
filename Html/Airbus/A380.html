@@ -12,17 +12,95 @@
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark" id="menu">
+            <nav class="col-auto col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark" id="menu">
               
-            </div>                      
+            </nav>                      
             <div class="col px-0">
-                <header class="bg-dark">
+              <header class="bg-dark d-flex justify-content-between align-items-center px-3 fixed-top">
+                <div class="d-flex align-items-center">
                     <button type="button" id="toggleNavButton" class="btn btn-outline-primary"><i class="bi bi-list text-white"></i></button>
-                    <span class="text-white">AIRBUS A380</span>
-                </header>
-                <section>
-                    <Span>Teste de Componente</Span>
-                </section>
+                    <span class="text-white ms-2">Airbus A380</span>
+                </div>
+                <nav class="d-flex">
+                  <a href="#Imagens" class="nav-link active text-white m-3">Imagens</a>
+                  <a href="#Historia" class="nav-link active text-white m-3">História</a>
+                </nav>
+            </header>  
+                <article>
+                  <section id="Imagens">
+                    <div class="d-flex justify-content-center">
+                      <div id="carouselExampleCaptions" class="carousel slide w-100 vh-100 position-relative">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner h-100">
+                          <div class="carousel-item active">
+                            <div class="d-flex justify-content-center align-items-center bg-dark w-100 h-100">
+                              <img src="../../Imagens/Airbus/A380/A380 - Emirantes.jpg" class="w-100 vh-100" alt="Airbus A380 da Emirantes">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white bg-dark">Visão Geral da Aeronave.</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center bg-dark w-100 h-100">
+                              <img src="../../Imagens/Airbus/A380/Cockpit A380.jpg" class="w-100 vh-100" alt="Cockpit do Airbus A380">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white bg-dark">Cockpit da aeronave.</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center bg-dark w-100 h-100">
+                              <img src="../../Imagens/Airbus/A380/A380 Interior.jpg" class="w-100 vh-100" alt="Interior do A380">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white bg-dark ">Interior utilizado pela Emirantes.</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center bg-dark w-100 h-100">
+                              <img src="../../Imagens/Airbus/A380/A380 Motor.png" class="w-100 vh-100" alt="Motor do A380">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white bg-dark">Visão do motor.</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center bg-dark w-100 h-100">
+                              <video controls class="vh-100 w-100">
+                                <source src="../../Imagens/Airbus/A380/A380-800 Decolando - Taking Off.mp4" type="video/mp4" class="vh-100 w-100">
+                                Seu navegador não suporta a tag de vídeo.
+                            </video>
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white bg-dark">Decolagem do A380.</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+                    <section id="Historia" class="vh-100 w-100">
+                      <div class="pt-5">
+                        <div class="pt-3">
+                          <span class="text-white bg-dark p-5">Historia</span>
+                        </div>
+                      </div>
+                    </section>            
+                </article>
                 <footer class="bg-dark" id="footer">
             
                 </footer>

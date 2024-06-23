@@ -1,62 +1,36 @@
-*{
+* {
     overflow-x: hidden;
+    scrollbar-width: none;
     vertical-align: middle;
     scrollbar-width: none;
 }
 
-/* ---------------Corpo-------------------- */
-
-header{
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
+#ConteudoInfo {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); 
 }
 
-header a{
-    float: right;
-    margin-right: 1%;
-    margin-top: 0.5%;
+#SobreImagem {
+    z-index: -1;
 }
 
-section{
-    width: 100%; 
-    position: relative;
+#Info p {
+    text-align: justify;
+    color: black;
+    margin: 1% 5%;
+    letter-spacing: -1px;
 }
 
-/* ----------------------------Sobre---------------------- */
-
-#Info{
-    height: 100vh;
-    padding-top: 3%;
-}
-
-/* ---------------------------Contato----------------------  */
-
-
-#Contato{
-    padding-top: 4%;
-    height: 100vh;
-    width: 100%;
-}
-
-#Comentarios{
-    position: absolute;
-    width: 95%;
-    height: 100vh;
-}
-
-#cardComentarios{
+#cardComentarios {
     overflow-y: auto;
     max-height: 70vh;
 }
 
-/*----------------------- Formulario----------------------- */
-
-.desfocarFundo{
+.desfocarFundo {
     filter: blur(5px);  
 }
 
-#Form{
+#Form {
     background-color: white;
     display: none;
     position: relative;
@@ -65,33 +39,17 @@ section{
     margin-top: 2%;
 }
 
-/* ---------------Carrossel------------------- */
-
-#ImagemCarrossel{
-    height: 100vh; 
-    width: 100%;
-}
-
-#LinkImagem{
+#LinkImagem {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 1300px) and (max-width: 1600px) {
-    #Info, #Contato{
-        height: 100vh;
-        padding-top: 4.5%;
-    }
-
-}
-
-/* Rever essa parte */
-@media only screen and (min-width: 200px) and (max-width: 500px){
-    #menu{
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+    #menu {
         width: 100%;
         font-size: larger;
     }
 
-    #toggleNavButtonPhone{
+    #toggleNavButtonPhone {
         display: flex;
         color: white;
         border-color: rgba(240, 248, 255, 0);
