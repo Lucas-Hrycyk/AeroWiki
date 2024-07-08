@@ -1,9 +1,4 @@
-#Principal{
-    position: fixed;
-}
-
 #Lista{
-    width: 100%;
     scrollbar-width: none;
     overflow-y: auto;
     max-height: 100vh;
@@ -28,6 +23,21 @@
 
 #toggleNavButtonPhone{
     display: none;
+}
+
+#Fotter{
+    display: inline-flex;
+}
+
+.footerMenu{
+    width: 49%;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1200px){
+    .footerMenu{
+        width: 12%;
+    }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 500px){

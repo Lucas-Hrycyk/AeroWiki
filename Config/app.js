@@ -1,10 +1,20 @@
 const express = require('express');
-const APi = express();
+const DB = require('./database');
 const route = require('../Routes/Routes');
-APi.use(express.json());
-APi.use(route);
 
-const PORT = 4300; 
-APi.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
-});
+const app = express();
+app.use(express.json());
+app.use(route);
+
+const PORT = 4300;
+
+DB.sync({ alter: true })
+    .then(() => {
+        console.log('Banco de dados sincronizados com sucesso.');
+        app.listen(PORT, () => {
+            console.log(`Servidor rodando na porta ${PORT}`);
+        });
+    })
+    .catch(erro => {
+        console.error('Não foi possível sincronizar o banco de dados:', erro);
+    });

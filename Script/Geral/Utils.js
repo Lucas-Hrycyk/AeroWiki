@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menu.classList.toggle('hidden');
   });
 
-  fetch('/AeroWiki/Html/Geral/MenuPrincipal.html')
+  fetch('/AeroWiki/Views/Geral/MenuPrincipal.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('menu').innerHTML = data;
@@ -16,12 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
         var menu = document.getElementById('menu');
         menu.classList.toggle('hidden');
       });
+
+      document.getElementById('FecharMenu').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        menu.classList.add('hidden'); 
+      });
+
+
+
     });
 
-    fetch('/AeroWiki/Html/Geral/Footer.html')
+  fetch('/AeroWiki/Views/Geral/Footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer').innerHTML = data;
-
     });
 });

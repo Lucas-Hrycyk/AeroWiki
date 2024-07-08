@@ -10,6 +10,19 @@
     background-color: rgba(255, 255, 255, 0.8); 
 }
 
+header{
+    width: 100%;
+    z-index: 500;
+}
+
+#menu{
+    z-index: 10000;
+}
+
+article{
+    position: relative;
+}
+
 #SobreImagem {
     z-index: -1;
 }
